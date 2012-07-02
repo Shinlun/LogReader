@@ -33,7 +33,7 @@ object ReadLog extends async.Plan
             var i = 0
             Exception.allCatch.opt {
               var log = Source.fromFile(f)
-              val text = log.dropWhile ({ c =>                                                                  // Start reading file
+              val text = log.dropWhile ({ c =>                                                                  // Start dropping unwanted lines
                   if(c == '\n') {
                     i += 1
                   } else {}
