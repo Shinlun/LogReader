@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Didao Logs</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="assets/scripts/libs/jquery.js"></script>
+    <script type="text/javascript" src="assets/scripts/readLogs.js"></script>
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1>Logs history</h1>
+    <div id="errors"></div>
+    <div id = "content">
+      <div id="buttons">
+        <label for="tail" class="label">Display last</label>
+        <input type="text" id="tail" /> <span class="label">lines</span><br />
+        <p class="tail-text">(leave blank to display whole log)</p>
+        <input type="button" class="reader" id="production" value="Production" />
+        <input type="button" class="reader" id="development" value="Development" />
+        <input type="button" class="reader" id="access" value="Access" />
+        <input type="button" class="reader" id="error" value="Error" />
+        <input type="button" id="stop" value="Stop" disabled />
+      </div>
+      <div id="display">
+        <h2>Display log</h2>
+        <span class="lines"></span>
+        <div id="log" class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

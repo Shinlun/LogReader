@@ -1,0 +1,21 @@
+README
+======
+
+This is a small real time file reading tool in Scala.
+It uses Unfiltered with pattern matching for queries and ajax queries in a javascript interval.
+The interesting part of this project is the server. The client is just a quick example of how one
+can use the tool.
+
+Conceived and programmed by:
+
+  - Ronan Letellier <ronan@gimmickit.org>
+  - Alexandre Berthaud <alexandre@berthaud.me>
+
+
+License
+-------
+
+GNU General Public License v3
+(see COPYING)
+Additionnaly, if we meet some day and you think this tool is worth it,
+you can buy us a beer in return. (See http://en.wikipedia.org/wiki/Beerware)
